@@ -1,0 +1,98 @@
+body{
+    margin: 0%;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: 
+    'cabeçalho cabeçalho cabeçalho cabeçalho cabeçalho' 
+    'principal principal principal principal adicional'
+    'rodape rodape rodape rodape rodape';
+
+    grid-template-rows: 130px 1000px 200px;
+}
+
+header{
+    position: fixed;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    grid-area: cabeçalho;
+    background-color: #BFFF8F;
+    color: #A52DAD;
+    padding: 15px;
+    width: 1903px;
+
+    font-family: Franklin Gothic Medium;
+}
+
+main{
+    grid-area: principal;
+    background-color: #A52DAD;
+
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+}
+
+aside{
+    grid-area: adicional;
+    background-color: #6FAD3E;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    grid-area: rodape;
+    background-color: #BFFF8F;
+
+    padding: 15px;
+}
+
+footer img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h2{
+    font-family: Arial Rounded MT Bold;
+}
+
+p{
+    font-size: 20px;
+}
+
+input{
+    margin-bottom: 15px;
+}
+
+section{
+    background-color: #F173FA;
+    padding-left: 15px;
+}
+
+.retrato{
+    border-radius: 10%;
+    border: solid black 2px;
+}
+
+.container-hor{
+    display: flex;
+    flex-direction: row;
+}
+
+.caixadetexto{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 600px;
+    padding: 15px;
+}
